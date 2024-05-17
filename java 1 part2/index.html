@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Rules for naming JS variables</h1>
+  <p>a) Variable names can only contain letters, digits, underscores, and dollar signs.</p>
+  <p>For example: $my_1stVariable</p>
+  <p>b) Variables must begin with a letter, underscore, or dollar sign.</p>
+  <p>For example: $name, _name or name</p>
+  <p>c) Variable names are case-sensitive.</p>
+  <p>d) Variable names should not be JS reserved keywords.</p>
+
+  <script>
+   
+        /// chap 3
+        var yourage="20";
+        alert("YOur age is"+yourage)
+        // Check if the visitor has previously visited the page
+if(localStorage.getItem('visitCount') === null) {
+    // If not, set the visit count to 1
+    localStorage.setItem('visitCount', 1);
+} else {
+    // If yes, increment the visit count
+    var visitCount = parseInt(localStorage.getItem('visitCount')) + 1;
+    localStorage.setItem('visitCount', visitCount);
+}
+
+// Display the number of visits using alert
+alert("You have visited this site " + localStorage.getItem('visitCount') + " times.");
+/// age print/
+
+document.write("YOur birth Year is 2002");
+var visitorName = "\nRUba\n";
+    var productTitle = "Sandles";
+    var quantity = 4;
+
+    // Display the order confirmation message
+    var message = visitorName + " ordered " + quantity + " " + productTitle + "(s) on XYZ Clothing store.";
+    document.addEventListener("DOMContentLoaded", function() {
+        document.write(message);
+    });
+     
+
+    </script>
+</body>
+</html>

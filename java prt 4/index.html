@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        
+var priceItem1 = 200;
+var priceItem2 = 300;
+var quantityItem1 = 3;
+var quantityItem2 = 2;
+var shippingCharges = 50;
+var totalCost = (priceItem1 * quantityItem1) + (priceItem2 * quantityItem2) + shippingCharges;
+
+document.write("<h2>Receipt</h2>");
+document.write("Price of Item 1: " + priceItem1 + " PKR<br>");
+document.write("Quantity of Item 1: " + quantityItem1 + "<br>");
+document.write("Price of Item 2: " + priceItem2 + " PKR<br>");
+document.write("Quantity of Item 2: " + quantityItem2 + "<br>");
+document.write("Shipping Charges: " + shippingCharges + " PKR<br><br>");
+document.write("<b>Total Cost: " + totalCost + " PKR</b><br><br>");
+
+// Task 8
+var totalMarks = 500;
+var marksObtained = 410;
+var percentage = (marksObtained / totalMarks) * 100;
+document.write("<h2>Percentage Calculator</h2>");
+document.write("Total Marks: " + totalMarks + "<br>");
+document.write("Marks Obtained: " + marksObtained + "<br>");
+document.write("<b>Percentage: " + percentage + "%</b><br><br>");
+
+// Task 9
+var usDollars = 10;
+var saudiRiyals = 25;
+var exchangeRateUSD = 104.80;
+var exchangeRateSAR = 28;
+var totalPKR = (usDollars * exchangeRateUSD) + (saudiRiyals * exchangeRateSAR);
+document.write("<h2>Currency Converter</h2>");
+document.write("Total US Dollars: " + usDollars + "<br>");
+document.write("Total Saudi Riyals: " + saudiRiyals + "<br>");
+document.write("<b>Total PKR: " + totalPKR + "</b><br><br>");
+
+// Task 10
+var result = (((5 + 10) * 10) / 2);
+document.write("<h2>Arithmetic Sequence</h2>");
+document.write("<b>Result: " + result + "</b><br><br>");
+
+// Task 11
+var currentYear = 2024;
+var birthYear = 1990;
+var possibleAge1 = currentYear - birthYear;
+var possibleAge2 = possibleAge1 - 1;
+document.write("<h2>Age Calculator</h2>");
+document.write("They are either " + possibleAge1 + " or " + possibleAge2 + " years old.<br><br>");
+
+// Task 12
+var radius = 7;
+var circumference = 2 * Math.PI * radius;
+var area = Math.PI * radius * radius;
+document.write("<h2>Geometrizer</h2>");
+document.write("The circumference is " + circumference.toFixed(2) + " units.<br>");
+document.write("The area is " + area.toFixed(2) + " square units.<br><br>");
+
+// Task 13
+var favoriteSnack = "Chocolate";
+var currentAge = 30;
+var maxAge = 80;
+var amountPerDay = 2;
+var yearsRemaining = maxAge - currentAge;
+var totalSnacksNeeded = yearsRemaining * 365 * amountPerDay;
+document.write("<h2>Lifetime Supply Calculator</h2>");
+document.write("Favorite Snack: " + favoriteSnack + "<br>");
+document.write("Current Age: " + currentAge + "<br>");
+document.write("Estimated Maximum Age: " + maxAge + "<br>");
+document.write("Amount Per Day: " + amountPerDay + "<br>");
+document.write("<b>You will need " + totalSnacksNeeded + " " + favoriteSnack + " to last you until the age of " + maxAge + "</b>");
+ // Task 1
+var number = 5;
+var result = "";
+for (var i = 1; i <= 10; i++) {
+    result += number + " x " + i + " = " + (number * i) + "<br>";
+}
+document.write(result);
+
+// Task 2
+var a = 2, b = 1;
+var result = --a - --b + ++b + b--;
+// Stage 1: --a;
+// At this stage, a is decremented by 1, so a becomes 1.
+// Stage 2: --a - --b;
+// Now, a is pre-decremented again, so a becomes 0, and b is pre-decremented, so b becomes 0.
+// Stage 3: --a - --b + ++b;
+// a is pre-decremented once more, so a becomes -1, b is pre-incremented, so b becomes 0, then b is post-incremented, so b becomes 1.
+// Stage 4: --a - --b + ++b + b--;
+// a is pre-decremented again, so a becomes -2, b is post-decremented, so b becomes 0.
+// Now, the expression is evaluated:
+// -2 - 0 + 1 + 0 = -1
+document.write("<br>Result: " + result);
+
+// Task 3: Greeting program
+var userName = prompt("Enter your name:");
+alert("Hello, " + userName + "!");
+
+// Task 4: Multiplication table with user input
+var numInput = prompt("Enter a number (default is 5):");
+var num = numInput ? parseInt(numInput) : 5;
+var multiplicationResult = "";
+for (var i = 1; i <= 10; i++) {
+    multiplicationResult += num + " x " + i + " = " + (num * i) + "<br>";
+}
+document.write("<br>Multiplication Table for " + num + ":<br>");
+document.write(multiplicationResult);
+
+// Task 5: Subject marks calculation and display
+var subject1 = prompt("Enter name of first subject:");
+var subject2 = prompt("Enter name of second subject:");
+var subject3 = prompt("Enter name of third subject:");
+var totalMarksPerSubject = 100;
+var obtainedMarksSubject1 = parseInt(prompt("Enter obtained marks for " + subject1 + ":"));
+var obtainedMarksSubject2 = parseInt(prompt("Enter obtained marks for " + subject2 + ":"));
+var obtainedMarksSubject3 = parseInt(prompt("Enter obtained marks for " + subject3 + ":"));
+var totalObtainedMarks = obtainedMarksSubject1 + obtainedMarksSubject2 + obtainedMarksSubject3;
+var totalMarks = totalMarksPerSubject * 3;
+var percentage = (totalObtainedMarks / totalMarks) * 100;
+
+document.write("<br><br><h2>Subject Marks</h2>");
+document.write("<table>");
+document.write("<tr><th>Subject</th><th>Total Marks</th><th>Obtained Marks</th></tr>");
+document.write("<tr><td>" + subject1 + "</td><td>" + totalMarksPerSubject + "</td><td>" + obtainedMarksSubject1 + "</td></tr>");
+document.write("<tr><td>" + subject2 + "</td><td>" + totalMarksPerSubject + "</td><td>" + obtainedMarksSubject2 + "</td></tr>");
+document.write("<tr><td>" + subject3 + "</td><td>" + totalMarksPerSubject + "</td><td>" + obtainedMarksSubject3 + "</td></tr>");
+document.write("</table>");
+document.write("<br>Total Marks: " + totalMarks);
+document.write("<br>Obtained Marks: " + totalObtainedMarks);
+document.write("<br>Percentage: " + percentage.toFixed(2) + "%");
+    </script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+         // Task 1
+var num1 = 10;
+var num2 = 5;
+var sum = num1 + num2;
+document.write("Sum: " + sum + "<br>");
+
+// Subtraction
+var difference = num1 - num2;
+document.write("Difference: " + difference + "<br>");
+
+// Multiplication
+var product = num1 * num2;
+document.write("Product: " + product + "<br>");
+
+// Division
+var quotient = num1 / num2;
+document.write("Quotient: " + quotient + "<br>");
+
+// Modulus
+var remainder = num1 % num2;
+document.write("Remainder: " + remainder + "<br>");
+
+// Task 3
+var a;
+document.write("Value after variable declaration is: " + a + "<br>");
+a = 5;
+document.write("Initial value: " + a + "<br>");
+a++;
+document.write("Value after increment is: " + a + "<br>");
+a += 7;
+document.write("Value after addition is: " + a + "<br>");
+a--;
+document.write("Value after decrement is: " + a + "<br>");
+ // Task 7
+var priceItem1 = 200;
+var priceItem2 = 300;
+var quantityItem1 = 3;
+var quantityItem2 = 2;
+var shippingCharges = 50;
+var totalCost = (priceItem1 * quantityItem1) + (priceItem2 * quantityItem2) + shippingCharges;
+
+document.write("<h2>Receipt</h2>");
+document.write("Price of Item 1: " + priceItem1 + " PKR<br>");
+document.write("Quantity of Item 1: " + quantityItem1 + "<br>");
+document.write("Price of Item 2: " + priceItem2 + " PKR<br>");
+document.write("Quantity of Item 2: " + quantityItem2 + "<br>");
+document.write("Shipping Charges: " + shippingCharges + " PKR<br><br>");
+document.write("<b>Total Cost: " + totalCost + " PKR</b><br><br>");
+
+// Task 8
+var totalMarks = 500;
+var marksObtained = 410;
+var percentage = (marksObtained / totalMarks) * 100;
+document.write("<h2>Percentage Calculator</h2>");
+document.write("Total Marks: " + totalMarks + "<br>");
+document.write("Marks Obtained: " + marksObtained + "<br>");
+document.write("<b>Percentage: " + percentage + "%</b><br><br>");
+
+// Task 9
+var usDollars = 10;
+var saudiRiyals = 25;
+var exchangeRateUSD = 104.80;
+var exchangeRateSAR = 28;
+var totalPKR = (usDollars * exchangeRateUSD) + (saudiRiyals * exchangeRateSAR);
+document.write("<h2>Currency Converter</h2>");
+document.write("Total US Dollars: " + usDollars + "<br>");
+document.write("Total Saudi Riyals: " + saudiRiyals + "<br>");
+document.write("<b>Total PKR: " + totalPKR + "</b><br><br>");
+
+// Task 10
+var result = (((5 + 10) * 10) / 2);
+document.write("<h2>Arithmetic Sequence</h2>");
+document.write("<b>Result: " + result + "</b><br><br>");
+
+// Task 11
+var currentYear = 2024;
+var birthYear = 1990;
+var possibleAge1 = currentYear - birthYear;
+var possibleAge2 = possibleAge1 - 1;
+document.write("<h2>Age Calculator</h2>");
+document.write("They are either " + possibleAge1 + " or " + possibleAge2 + " years old.<br><br>");
+
+// Task 12
+var radius = 7;
+var circumference = 2 * Math.PI * radius;
+var area = Math.PI * radius * radius;
+document.write("<h2>Geometrizer</h2>");
+document.write("The circumference is " + circumference.toFixed(2) + " units.<br>");
+document.write("The area is " + area.toFixed(2) + " square units.<br><br>");
+
+// Task 13
+var favoriteSnack = "Chocolate";
+var currentAge = 30;
+var maxAge = 80;
+var amountPerDay = 2;
+var yearsRemaining = maxAge - currentAge;
+var totalSnacksNeeded = yearsRemaining * 365 * amountPerDay;
+document.write("<h2>Lifetime Supply Calculator</h2>");
+document.write("Favorite Snack: " + favoriteSnack + "<br>");
+document.write("Current Age: " + currentAge + "<br>");
+document.write("Estimated Maximum Age: " + maxAge + "<br>");
+document.write("Amount Per Day: " + amountPerDay + "<br>");
+document.write("<b>You will need " + totalSnacksNeeded + " " + favoriteSnack + " to last you until the age of " + maxAge + "</b>");
+       </script>
+       </body>
+       </html>
